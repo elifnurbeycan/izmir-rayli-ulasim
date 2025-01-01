@@ -3,11 +3,11 @@
 <head>
     <meta name="keywords" content="İzmir raylı ulaşım, İZBAN, İzmir Metro, Konak Tramvayı, Karşıyaka Tramvayı, Çiğli Tramvayı, toplu taşıma İzmir">
     <meta name="description" content="İzmir'in raylı ulaşım sistemleri hakkında detaylı bilgi alın. İZBAN, Metro, Konak Tramvayı, Karşıyaka Tramvayı ve Çiğli Tramvayı hakkında güncel içerikler.">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İzmir Raylı Ulaşım</title>
     <style>
-        /* Temel Stiller */
         * {
             margin: 0;
             padding: 0;
@@ -28,13 +28,13 @@
 
         header {
             background-color: #3d453f;
-            padding: 20px 0;
+            padding: 15px 0;
             color: white;
             text-align: center;
         }
 
         header h1 {
-            font-size: 2.5em;
+            font-size: 1.8em;
             margin-bottom: 10px;
         }
 
@@ -42,45 +42,49 @@
             list-style-type: none;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap; /* Mobil uyum için elemanların taşmasını engeller */
+            flex-wrap: wrap;
             margin-top: 10px;
-            gap: 10px; /* Elemanlar arasında boşluk bırakır */
+            gap: 10px;
+        }
+
+        nav ul li {
+            margin: 0;
         }
 
         nav ul li a {
             text-decoration: none;
             color: white;
             font-size: 1em;
-            padding: 10px 20px;
+            padding: 8px 12px;
             border-radius: 5px;
-            background-color: #4a5246; /* Arka plan rengi */
+            background-color: #3d453f;
         }
 
         nav ul li a:hover {
-            background-color: #586055;
+            background-color: #2e342f;
         }
 
         section {
             background-color: white;
-            padding: 40px 0;
+            padding: 20px 10px;
             margin-top: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         section h2 {
-            font-size: 2em;
+            font-size: 1.5em;
             margin-bottom: 20px;
         }
 
         section p {
             font-size: 1em;
             line-height: 1.6;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .image-container {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .image-container img {
@@ -96,10 +100,10 @@
         }
 
         table th, table td {
-            padding: 12px;
+            padding: 8px;
             border: 1px solid #ddd;
             text-align: center;
-            font-size: 1em;
+            font-size: 0.9em;
         }
 
         table th {
@@ -115,57 +119,46 @@
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 15px;
             margin-top: 30px;
         }
 
         footer p {
-            font-size: 1em;
+            font-size: 0.9em;
         }
 
-        /* Mobil Uyumluluk için Medya Sorguları */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 1.8em;
+                font-size: 1.5em;
+                word-wrap: break-word;
             }
 
             nav ul {
-                flex-direction: column; /* Menü elemanlarını dikey hizalar */
-                align-items: center; /* Dikey düzenleme için ortalar */
-                gap: 5px;
+                flex-direction: column;
+                align-items: center;
             }
 
             nav ul li a {
-                font-size: 0.9em; /* Yazı boyutunu küçültür */
-                padding: 8px 15px; /* Kenar boşluklarını azaltır */
+                font-size: 0.9em;
+                padding: 6px 10px;
+                text-align: center;
             }
 
             section {
-                padding: 20px;
-            }
-
-            section h2 {
-                font-size: 1.6em;
-            }
-
-            section p {
-                font-size: 0.9em;
-            }
-
-            table th, table td {
-                font-size: 0.9em;
-                padding: 8px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 1.5em;
+                padding: 15px 5px;
             }
 
             table th, table td {
                 font-size: 0.8em;
-                padding: 5px;
+                padding: 6px;
+            }
+
+            .image-container img {
+                max-height: 200px;
+            }
+
+            footer {
+                padding: 10px;
             }
         }
     </style>
