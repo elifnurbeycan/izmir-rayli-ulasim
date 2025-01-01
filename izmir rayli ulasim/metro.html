@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İzmir Metro</title>
+    <style>
+        /* Genel stiller */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Başlık ve navigasyon */
+        header {
+            background-color: #9e0209;
+            padding: 20px 0;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #9e0209;
+        }
+
+        /* Ana içerik alanı */
+        .main-section {
+            background-color: white;
+            padding: 40px 0;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-section h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+
+        .main-section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Tablo stili */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        table th {
+            background-color: #9e0209;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>İzmir Metro</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="izban.html">İZBAN</a></li>
+                    <li><a href="metro.html">Metro</a></li>
+                    <li><a href="konak_tramvay.html">Konak Tramvayı</a></li>
+                    <li><a href="karsiyaka_tramvay.html">Karşıyaka Tramvayı</a></li>
+                    <li><a href="cigli_tramvay.html">Çiğli Tramvayı</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="main-section">
+        <div class="container">
+            <h2>İzmir Metro Hattı</h2>
+            <p>İzmir Metro, şehrin en önemli raylı ulaşım hatlarından biridir ve 2000 yılında hizmete girmiştir. Bu hat, şehir içindeki yoğun ulaşım taleplerini karşılamak için sürekli genişlemektedir.</p>
+            
+            <div class="image-container">
+                <img src="izmir_rayli.jpg" alt="İzmir Metro">
+            </div>
+
+            <h3>Hat Bilgileri</h3>
+            <table>
+                <tr>
+                    <th>Hat Uzunluğu</th>
+                    <td>20 km</td>
+                </tr>
+                <tr>
+                    <th>İşletmeye Açılış Yılı</th>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <th>İstasyon Sayısı</th>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <th>Günlük Yolcu Sayısı</th>
+                    <td>200,000</td>
+                </tr>
+                <tr>
+                    <th>İstasyonlar</th>
+                    <td>Hilal, Konak, Basmane, Şair Eşref, Fahrettin Altay, ve diğerleri</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="main-section" id="aktarma-duraklar">
+        <div class="container">
+            <h2>İzmir Metro Aktarma Durakları</h2>
+            <table>
+                <tr>
+                    <th>Aktarma Merkezi Duraklar</th>
+                </tr>
+                <tr><td><strong>Hilal</strong> - İZBAN</td></tr>
+                <tr><td><strong>Halkapınar</strong> - İZBAN ve Konak Tramvayı</td></tr>
+                <tr><td><strong>Alsancak</strong> - Konak Tramvayı</td></tr>
+                <tr><td><strong>Konak</strong> - Konak Tramvayı</td></tr>
+                <tr><td><strong>Fahrettin Altay</strong> - Konak Tramvayı</td></tr>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 İzmir Raylı Ulaşım Rehberi</p>
+    </footer>
+</body>
+</html>
