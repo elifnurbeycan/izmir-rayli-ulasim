@@ -3,7 +3,6 @@
 <head>
     <meta name="keywords" content="İzmir raylı ulaşım, İZBAN, İzmir Metro, Konak Tramvayı, Karşıyaka Tramvayı, Çiğli Tramvayı, toplu taşıma İzmir">
     <meta name="description" content="İzmir'in raylı ulaşım sistemleri hakkında detaylı bilgi alın. İZBAN, Metro, Konak Tramvayı, Karşıyaka Tramvayı ve Çiğli Tramvayı hakkında güncel içerikler.">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İzmir Raylı Ulaşım</title>
@@ -28,34 +27,34 @@
 
         header {
             background-color: #3d453f;
-            padding: 15px 0;
+            padding: 15px 0; /* Arayüzün üst kısmındaki boşluğu küçülttüm */
             color: white;
             text-align: center;
         }
 
         header h1 {
-            font-size: 1.8em;
+            font-size: 1.8em; /* Küçültülmüş başlık boyutu */
             margin-bottom: 10px;
         }
 
         nav ul {
             list-style-type: none;
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
-            margin-top: 10px;
+            justify-content: center;
             gap: 10px;
+            margin-top: 10px;
         }
 
         nav ul li {
-            margin: 0;
+            margin: 5px 0;
         }
 
         nav ul li a {
             text-decoration: none;
             color: white;
-            font-size: 1em;
-            padding: 8px 12px;
+            font-size: 1em; /* Menüler arasındaki yazı boyutunu uyumlu hale getirdim */
+            padding: 8px 15px;
             border-radius: 5px;
             background-color: #3d453f;
         }
@@ -72,8 +71,8 @@
         }
 
         section h2 {
-            font-size: 1.5em;
-            margin-bottom: 20px;
+            font-size: 1.5em; /* Başlık boyutunu uyumlu hale getirdim */
+            margin-bottom: 15px;
         }
 
         section p {
@@ -100,9 +99,9 @@
         }
 
         table th, table td {
-            padding: 8px;
+            padding: 10px;
             border: 1px solid #ddd;
-            text-align: center;
+            text-align: left;
             font-size: 0.9em;
         }
 
@@ -127,38 +126,55 @@
             font-size: 0.9em;
         }
 
+        /* Mobile responsive */
         @media (max-width: 768px) {
             header h1 {
                 font-size: 1.5em;
-                word-wrap: break-word;
             }
 
             nav ul {
-                flex-direction: column;
-                align-items: center;
+                gap: 5px;
             }
 
             nav ul li a {
                 font-size: 0.9em;
                 padding: 6px 10px;
-                text-align: center;
             }
 
-            section {
-                padding: 15px 5px;
+            section h2 {
+                font-size: 1.5em;
+            }
+
+            section p {
+                font-size: 0.9em;
             }
 
             table th, table td {
                 font-size: 0.8em;
+                padding: 8px;
+            }
+
+            footer p {
+                font-size: 0.8em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            section h2 {
+                font-size: 1.3em;
+            }
+
+            section p {
+                font-size: 0.85em;
+            }
+
+            table th, table td {
+                font-size: 0.7em;
                 padding: 6px;
             }
 
-            .image-container img {
-                max-height: 200px;
-            }
-
-            footer {
-                padding: 10px;
+            footer p {
+                font-size: 0.7em;
             }
         }
     </style>
