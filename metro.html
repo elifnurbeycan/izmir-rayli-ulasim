@@ -26,62 +26,67 @@
 
         /* Başlık ve navigasyon */
         header {
-            background-color: #9e0209;
-            padding: 20px 0;
+            background-color: #3d453f; /* Renk uyumu sağlandı */
+            padding: 15px 0; /* Yüksekliği tutarlı yapıldı */
             color: white;
             text-align: center;
         }
 
         header h1 {
-            font-size: 2.5em;
+            font-size: 1.8em; /* Başlık boyutu tutarlı hale getirildi */
             margin-bottom: 10px;
         }
 
         nav ul {
             list-style-type: none;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
+            gap: 10px;
             margin-top: 10px;
         }
 
         nav ul li {
-            margin: 0 15px;
+            margin: 5px 0;
         }
 
         nav ul li a {
             text-decoration: none;
             color: white;
-            font-size: 1.1em;
-            padding: 10px 20px;
+            font-size: 1em;
+            padding: 8px 15px;
             border-radius: 5px;
+            background-color: #3d453f;
         }
 
         nav ul li a:hover {
-            background-color: #9e0209;
+            background-color: #2e342f;
         }
 
         /* Ana içerik alanı */
         .main-section {
             background-color: white;
-            padding: 40px 0;
+            padding: 20px 0;
             margin-top: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .main-section h2 {
-            font-size: 2.2em;
-            margin-bottom: 20px;
+            font-size: 1.8em; /* Başlık boyutu uyumlu hale getirildi */
+            margin-bottom: 15px;
+            text-align: center;
         }
 
         .main-section p {
-            font-size: 1.1em;
+            font-size: 1em;
             line-height: 1.6;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+            text-align: justify;
         }
 
         .image-container {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .image-container img {
@@ -98,14 +103,14 @@
         }
 
         table th, table td {
-            padding: 12px;
+            padding: 10px;
             border: 1px solid #ddd;
-            text-align: center;
-            font-size: 1.1em;
+            text-align: left;
+            font-size: 0.9em;
         }
 
         table th {
-            background-color: #9e0209;
+            background-color: #3d453f;
             color: white;
         }
 
@@ -118,12 +123,72 @@
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 15px;
             margin-top: 30px;
         }
 
         footer p {
-            font-size: 1em;
+            font-size: 0.9em;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            nav ul {
+                gap: 5px;
+            }
+
+            nav ul li a {
+                font-size: 0.9em;
+                padding: 6px 10px;
+            }
+
+            .main-section h2 {
+                font-size: 1.5em;
+                margin-bottom: 10px;
+            }
+
+            .main-section p {
+                font-size: 0.9em;
+                margin-bottom: 15px;
+            }
+
+            table th, table td {
+                font-size: 0.8em;
+                padding: 8px;
+            }
+
+            table {
+                font-size: 0.8em;
+            }
+
+            footer p {
+                font-size: 0.8em;
+            }
+        }
+
+        /* Additional media query for very small screens */
+        @media (max-width: 480px) {
+            .main-section h2 {
+                font-size: 1.3em;
+            }
+
+            .main-section p {
+                font-size: 0.85em;
+                margin-bottom: 10px;
+            }
+
+            table th, table td {
+                font-size: 0.7em;
+                padding: 6px;
+            }
+
+            footer p {
+                font-size: 0.7em;
+            }
         }
     </style>
 </head>
@@ -143,12 +208,12 @@
             </nav>
         </div>
     </header>
-    
+
     <section class="main-section">
         <div class="container">
             <h2>İzmir Metro Hattı</h2>
             <p>İzmir Metro, şehrin en önemli raylı ulaşım hatlarından biridir ve 2000 yılında hizmete girmiştir. Bu hat, şehir içindeki yoğun ulaşım taleplerini karşılamak için sürekli genişlemektedir.</p>
-            
+
             <div class="image-container">
                 <img src="izmir_rayli.jpg" alt="İzmir Metro">
             </div>
@@ -172,8 +237,8 @@
                     <td>200,000</td>
                 </tr>
                 <tr>
-                    <th>İstasyonlar</th>
-                    <td>Hilal, Konak, Basmane, Şair Eşref, Fahrettin Altay, ve diğerleri</td>
+                    <th>Hat Üzerindeki Bölgeler</th>
+                    <td>Narlıdere, Balçova, Karabağlar, Konak ve Bornova</td>
                 </tr>
             </table>
         </div>
