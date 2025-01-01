@@ -3,11 +3,11 @@
 <head>
     <meta name="keywords" content="İzmir raylı ulaşım, İZBAN, İzmir Metro, Konak Tramvayı, Karşıyaka Tramvayı, Çiğli Tramvayı, toplu taşıma İzmir">
     <meta name="description" content="İzmir'in raylı ulaşım sistemleri hakkında detaylı bilgi alın. İZBAN, Metro, Konak Tramvayı, Karşıyaka Tramvayı ve Çiğli Tramvayı hakkında güncel içerikler.">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İzmir Raylı Ulaşım</title>
     <style>
+        /* Temel Stiller */
         * {
             margin: 0;
             padding: 0;
@@ -42,23 +42,22 @@
             list-style-type: none;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap; /* Mobil uyum için elemanların taşmasını engeller */
             margin-top: 10px;
-        }
-
-        nav ul li {
-            margin: 0 15px;
+            gap: 10px; /* Elemanlar arasında boşluk bırakır */
         }
 
         nav ul li a {
             text-decoration: none;
             color: white;
-            font-size: 1.1em;
+            font-size: 1em;
             padding: 10px 20px;
             border-radius: 5px;
+            background-color: #4a5246; /* Arka plan rengi */
         }
 
         nav ul li a:hover {
-            background-color: #3d453f;
+            background-color: #586055;
         }
 
         section {
@@ -69,12 +68,12 @@
         }
 
         section h2 {
-            font-size: 2.2em;
+            font-size: 2em;
             margin-bottom: 20px;
         }
 
         section p {
-            font-size: 1.1em;
+            font-size: 1em;
             line-height: 1.6;
             margin-bottom: 30px;
         }
@@ -100,7 +99,7 @@
             padding: 12px;
             border: 1px solid #ddd;
             text-align: center;
-            font-size: 1.1em;
+            font-size: 1em;
         }
 
         table th {
@@ -122,6 +121,52 @@
 
         footer p {
             font-size: 1em;
+        }
+
+        /* Mobil Uyumluluk için Medya Sorguları */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            nav ul {
+                flex-direction: column; /* Menü elemanlarını dikey hizalar */
+                align-items: center; /* Dikey düzenleme için ortalar */
+                gap: 5px;
+            }
+
+            nav ul li a {
+                font-size: 0.9em; /* Yazı boyutunu küçültür */
+                padding: 8px 15px; /* Kenar boşluklarını azaltır */
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            section h2 {
+                font-size: 1.6em;
+            }
+
+            section p {
+                font-size: 0.9em;
+            }
+
+            table th, table td {
+                font-size: 0.9em;
+                padding: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            table th, table td {
+                font-size: 0.8em;
+                padding: 5px;
+            }
         }
     </style>
 </head>
@@ -183,20 +228,6 @@
                     <td>2023</td>
                 </tr>
             </table>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <h3>Sayfa Bağlantıları</h3>
-            <p>Aşağıdaki sayfalardan her bir raylı ulaşım aracı hakkında detaylı bilgi alabilirsiniz:</p>
-            <ul>
-                <li><a href="izban.html">İZBAN</a> - İzmir Banliyö Hattı</li>
-                <li><a href="metro.html">Metro</a> - İzmir Metro Hattı</li>
-                <li><a href="konak_tramvay.html">Konak Tramvayı</a> - Şehir Merkezi Tramvayı</li>
-                <li><a href="karsiyaka_tramvay.html">Karşıyaka Tramvayı</a> - Karşıyaka Sahil Tramvayı</li>
-                <li><a href="cigli_tramvay.html">Çiğli Tramvayı</a> - Yeni Açılan Çiğli Hattı</li>
-            </ul>
         </div>
     </section>
 
