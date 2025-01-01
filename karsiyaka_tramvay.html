@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karşıyaka Tramvayı</title>
+    <style>
+        /* Genel stiller */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Başlık ve navigasyon */
+        header {
+            background-color: #28a745;
+            padding: 20px 0;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #28a745;
+        }
+
+        /* Ana içerik alanı */
+        .main-section {
+            background-color: white;
+            padding: 40px 0;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-section h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+
+        .main-section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Tablo stili */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        table th {
+            background-color: #28a745;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Karşıyaka Tramvayı</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="izban.html">İZBAN</a></li>
+                    <li><a href="metro.html">Metro</a></li>
+                    <li><a href="konak_tramvay.html">Konak Tramvayı</a></li>
+                    <li><a href="karsiyaka_tramvay.html">Karşıyaka Tramvayı</a></li>
+                    <li><a href="cigli_tramvay.html">Çiğli Tramvayı</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="main-section">
+        <div class="container">
+            <h2>Karşıyaka Tramvayı Hattı</h2>
+            <p>Karşıyaka Tramvayı, İzmir'in Karşıyaka ilçesinin en önemli ulaşım hattıdır ve 2017 yılında hizmete girmiştir. Bu hat, Karşıyaka'nın sahil boyunca uzanarak büyük bir yolcu kapasitesine hizmet etmektedir.</p>
+            
+            <div class="image-container">
+                <img src="karsiyaka.jpg" alt="Karşıyaka Tramvayı">
+            </div>
+
+            <h3>Hat Bilgileri</h3>
+            <table>
+                <tr>
+                    <th>Hat Uzunluğu</th>
+                    <td>8.8 km</td>
+                </tr>
+                <tr>
+                    <th>İşletmeye Açılış Yılı</th>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <th>İstasyon Sayısı</th>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>Günlük Yolcu Sayısı</th>
+                    <td>70,000</td>
+                </tr>
+                <tr>
+                    <th>İstasyonlar</th>
+                    <td>Karşıyaka, Bostanlı, Alaybey, ve diğerleri</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Aktarma Durakları Tablosu -->
+    <section class="main-section" id="aktarma-duraklar">
+        <div class="container">
+            <h3>Karşıyaka Tramvayı Aktarma Durakları</h3>
+            <table>
+                <tr>
+                    <th>Aktarma Merkezi Duraklar</th>
+                </tr>
+                <tr><td><strong>Ataşehir</strong> - İZBAN ve Çiğli Tramvayı</td></tr>
+                <tr><td><strong>Alaybey</strong> - İZBAN</td></tr>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 İzmir Raylı Ulaşım Rehberi</p>
+    </footer>
+</body>
+</html>
